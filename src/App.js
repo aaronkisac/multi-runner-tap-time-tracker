@@ -117,8 +117,6 @@ function App() {
     const totalFastest = race?.totalFastest();
     const lapFastest = race?.lapFastest();
     if (!isEndRace || !totalFastest || !lapFastest) return "";
-    console.log("​statistics -> totalFastest", totalFastest);
-    console.log("​statistics -> lapFastest", lapFastest);
     return (
       <div className="table">
         <strong>{totalFastest?.name}</strong> has the highest lap count and
