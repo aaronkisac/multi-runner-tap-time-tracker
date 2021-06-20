@@ -168,10 +168,7 @@ function App() {
                 <td>{competitor?.lapCount()}</td>
                 <td>{formatTime(competitor?.totalTime())}</td>
                 <td>{formatTime(competitor?.averageTime())}</td>
-                <td>
-                  {formatTime(competitor?.lastLapTime())}/
-                  {formatTime(competitor?.fastestLapTime())}
-                </td>
+                <td>{formatTime(competitor?.lastLapTime())}</td>
               </tr>
             );
           }) ?? <tr></tr>}
